@@ -1,0 +1,9 @@
+# ninja log v5
+0	401	7026736258920284	CMakeFiles/DataStructure.dir/main.cpp.obj	16d4688ef3402972
+403	574	7026736260569502	DataStructure.exe	e83c7902c4238e60
+1	679	7026736630747421	CMakeFiles/SingleLinkedList.dir/DataStructure/Linked_LIst/main.cpp.obj	317a0fb9833b5dcc
+679	824	7026736632136632	SingleLinkedList.exe	a059b860fb39394b
+0	774	7026737163410213	CMakeFiles/DoubleLinkedList.dir/DataStructure/Doubly_Linked_LIst/main.cpp.obj	f02d03e8b8df3fd4
+774	906	7026737164649695	DoubleLinkedList.exe	74188d816efc0052
+0	412	7026737938299602	CMakeFiles/Queue.dir/DataStructure/Queue/main.cpp.obj	cbe8f8cb030f5f9
+412	521	7026737939348832	Queue.exe	961d0d00dbcbd930
