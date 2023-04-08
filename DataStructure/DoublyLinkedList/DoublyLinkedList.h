@@ -53,8 +53,8 @@ public:
             newNode->prev = tail;
             tail->next = newNode;
             tail = newNode;
+            size++;
         }
-        size++;
     }
     void insertAt(T value, int index)
     {
@@ -86,8 +86,8 @@ public:
                 newNode->next = current->next;
                 newNode->prev = current;
                 current->next = newNode;
+                size++;
             }
-            size++;
         }
     }
     void forwardTraversal()
@@ -174,8 +174,8 @@ public:
                 current->next->next->prev = current;
                 current->next = deletedNode->next;
                 delete deletedNode;
+                size--;
             }
-            size--;
         }
     }
     T retrieveAt(int index)
@@ -289,19 +289,125 @@ public:
 
         if (index1 >= 0 && index1 < size && index2 >= 0 && index2 < size)
         {
-            Node<T> *firstEl = head, *secondEL = head;
-            for (int i = 1; i <= index1; i++)
+            if (index1 == index2)
             {
-                firstEl = firstEl->next;
+                cout << "elements are equal " << endl;
             }
-            for (int i = 1; i <= index2; i++)
+            else
             {
-                secondEL = secondEL->next;
+                Node<T> *first = new Node<T>;
+                Node<T> *second = new Node<T>;
+                Node<T> *firstB = new Node<T>;
+                Node<T> *firstA = new Node<T>;
+                Node<T> *secondB = new Node<T>;
+                Node<T> *secondA = new Node<T>;
+
+                // if the element are head and tail
+                if ((index1 == 0 && index2 == size - 1) || (index2 == 0 && index1 == size - 1))
+                {
+                    cout << "====" << endl;
+                    first = head;
+                    second = tail;
+                    firstA = head->next;
+                    secondB = tail->prev;
+                    // swap
+                    first->next = NULL;
+                    first->prev = secondB;
+                    secondB->next = first;
+                    second->prev = NULL;
+                    second->next = firstA;
+                    firstA->prev = second;
+                    head = second;
+                    tail = first;
+                }
+                // if one of the elements is head
+                else if ((index1 == 0 && index2 < size - 1) || (index2 == 0 && index1 < size - 1))
+                {
+                    first = second = head;
+                    int index;
+                    if (index1 != 0)
+                    {
+                        index = index1;
+                    }
+                    else if (index2 != 0)
+                    {
+                        index = index2;
+                    }
+                    for (int i = 1; i <= index; i++)
+                    {
+                        second = second->next;
+                    }
+                    firstA = first->next;
+                    secondB = second->prev;
+                    secondA = second->next;
+                    // swap
+                    first->prev = secondB;
+                    first->next = secondA;
+                    firstA->prev = second;
+                    second->next = firstA;
+                    second->prev = NULL;
+                    secondB->next = first;
+                    head = second;
+                }
+                // if one of the is tail
+                else if ((index1 == size - 1 && index2 > 0) || (index2 == size - 1 && index1 > 0))
+                {
+                    int index;
+                    second = tail;
+                    first = head;
+                    secondB = second->prev;
+
+                    if (index1 != size - 1)
+                    {
+                        index = index1;
+                    }
+                    else if (index2 != size - 1)
+                    {
+                        index = index2;
+                    }
+                    for (int i = 1; i <= index; i++)
+                    {
+                        first = first->next;
+                    }
+                    firstA = first->next;
+                    firstB = first->prev;
+                    // swap
+                    first->next = NULL;
+                    first->prev = secondB;
+                    secondB->next = first;
+                    second->next = firstA;
+                    second->prev = firstB;
+                    firstA->prev = firstB->next = second;
+                    tail = first;
+                }
+                else
+                {
+                    first = second = head;
+                    for (int i = 1; i <= index1; i++)
+                    {
+                        first = first->next;
+                    }
+                    for (int i = 1; i <= index2; i++)
+                    {
+                        second = second->next;
+                    }
+                    firstB = first->prev;
+                    firstA = first->next;
+                    secondB = second->prev;
+                    secondA = second->next;
+                    // swapinng
+                    first->next = secondA;
+                    first->prev = secondB;
+                    second->next = firstA;
+                    second->prev = firstB;
+                    firstB->next = second;
+                    firstA->prev = second;
+                    secondA->prev = first;
+                    secondB->next = first;
+                }
             }
-            T temp = firstEl->data;
-            firstEl->data = secondEL->data;
-            secondEL->data = temp;
         }
+
         else
         {
             cout << "ERROR: Index Out Of Range" << endl;
