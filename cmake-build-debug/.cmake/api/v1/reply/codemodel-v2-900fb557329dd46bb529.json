@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -68,6 +70,13 @@
 					"id" : "SingleLinkedList::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-SingleLinkedList-Debug-c8a0533f20c62b3be2eb.json",
 					"name" : "SingleLinkedList",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Stack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Stack-Debug-79ff3f467df47918238b.json",
+					"name" : "Stack",
 					"projectIndex" : 0
 				}
 			]

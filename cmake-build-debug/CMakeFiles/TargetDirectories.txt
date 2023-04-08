@@ -4,3 +4,4 @@ D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/Da
 D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/DataStructure/cmake-build-debug/CMakeFiles/DoubleLinkedList.dir
 D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/DataStructure/cmake-build-debug/CMakeFiles/Queue.dir
+D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/DataStructure/cmake-build-debug/CMakeFiles/Stack.dir
