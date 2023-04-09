@@ -74,6 +74,39 @@ build DataStructure.exe: CXX_EXECUTABLE_LINKER__DataStructure_Debug CMakeFiles/D
   TARGET_PDB = DataStructure.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Merge_K_Linked_List
+
+
+#############################################
+# Order-only phony target for Merge_K_Linked_List
+
+build cmake_object_order_depends_target_Merge_K_Linked_List: phony || CMakeFiles/Merge_K_Linked_List.dir
+
+build CMakeFiles/Merge_K_Linked_List.dir/Algorithms/LinkedList_Problems/Merge_K_LinkedList.cpp.obj: CXX_COMPILER__Merge_K_Linked_List_Debug D$:/FCAI-CU/Second$ Year/Second$ Semester/DataStructrue/Assignments/Assignment$ 2/DataStructure/Algorithms/LinkedList$ Problems/Merge_K_LinkedList.cpp || cmake_object_order_depends_target_Merge_K_Linked_List
+  DEP_FILE = CMakeFiles\Merge_K_Linked_List.dir\Algorithms\LinkedList_Problems\Merge_K_LinkedList.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Merge_K_Linked_List.dir
+  OBJECT_FILE_DIR = CMakeFiles\Merge_K_Linked_List.dir\Algorithms\LinkedList_Problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Merge_K_Linked_List
+
+
+#############################################
+# Link the executable Merge_K_Linked_List.exe
+
+build Merge_K_Linked_List.exe: CXX_EXECUTABLE_LINKER__Merge_K_Linked_List_Debug CMakeFiles/Merge_K_Linked_List.dir/Algorithms/LinkedList_Problems/Merge_K_LinkedList.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Merge_K_Linked_List.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Merge_K_Linked_List.exe
+  TARGET_IMPLIB = libMerge_K_Linked_List.dll.a
+  TARGET_PDB = Merge_K_Linked_List.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target SingleLinkedList
 
 
@@ -105,18 +138,6 @@ build SingleLinkedList.exe: CXX_EXECUTABLE_LINKER__SingleLinkedList_Debug CMakeF
   TARGET_FILE = SingleLinkedList.exe
   TARGET_IMPLIB = libSingleLinkedList.dll.a
   TARGET_PDB = SingleLinkedList.exe.dbg
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure\cmake-build-debug" && D:\CLion-2021.3.3\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure" -B"D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure\cmake-build-debug""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Object build statements for EXECUTABLE target DoubleLinkedList
@@ -229,11 +250,60 @@ build Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug CMakeFiles/Stack.dir/DataStr
   TARGET_PDB = Stack.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Generate_Binary_Numbers_from_1_to_n
+
+
+#############################################
+# Order-only phony target for Generate_Binary_Numbers_from_1_to_n
+
+build cmake_object_order_depends_target_Generate_Binary_Numbers_from_1_to_n: phony || CMakeFiles/Generate_Binary_Numbers_from_1_to_n.dir
+
+build CMakeFiles/Generate_Binary_Numbers_from_1_to_n.dir/Algorithms/Queue_Problems/Generate_Binary_Numbers_from_1_to_n.cpp.obj: CXX_COMPILER__Generate_Binary_Numbers_from_1_to_n_Debug D$:/FCAI-CU/Second$ Year/Second$ Semester/DataStructrue/Assignments/Assignment$ 2/DataStructure/Algorithms/Queue$ Problems/Generate_Binary_Numbers_from_1_to_n.cpp || cmake_object_order_depends_target_Generate_Binary_Numbers_from_1_to_n
+  DEP_FILE = CMakeFiles\Generate_Binary_Numbers_from_1_to_n.dir\Algorithms\Queue_Problems\Generate_Binary_Numbers_from_1_to_n.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Generate_Binary_Numbers_from_1_to_n.dir
+  OBJECT_FILE_DIR = CMakeFiles\Generate_Binary_Numbers_from_1_to_n.dir\Algorithms\Queue_Problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Generate_Binary_Numbers_from_1_to_n
+
+
+#############################################
+# Link the executable Generate_Binary_Numbers_from_1_to_n.exe
+
+build Generate_Binary_Numbers_from_1_to_n.exe: CXX_EXECUTABLE_LINKER__Generate_Binary_Numbers_from_1_to_n_Debug CMakeFiles/Generate_Binary_Numbers_from_1_to_n.dir/Algorithms/Queue_Problems/Generate_Binary_Numbers_from_1_to_n.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Generate_Binary_Numbers_from_1_to_n.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Generate_Binary_Numbers_from_1_to_n.exe
+  TARGET_IMPLIB = libGenerate_Binary_Numbers_from_1_to_n.dll.a
+  TARGET_PDB = Generate_Binary_Numbers_from_1_to_n.exe.dbg
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure\cmake-build-debug" && D:\CLion-2021.3.3\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure" -B"D:\FCAI-CU\Second Year\Second Semester\DataStructrue\Assignments\Assignment 2\DataStructure\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build DataStructure: phony DataStructure.exe
 
 build DoubleLinkedList: phony DoubleLinkedList.exe
+
+build Generate_Binary_Numbers_from_1_to_n: phony Generate_Binary_Numbers_from_1_to_n.exe
+
+build Merge_K_Linked_List: phony Merge_K_Linked_List.exe
 
 build Queue: phony Queue.exe
 
@@ -249,7 +319,7 @@ build Stack: phony Stack.exe
 #############################################
 # Folder: D:/FCAI-CU/Second Year/Second Semester/DataStructrue/Assignments/Assignment 2/DataStructure/cmake-build-debug
 
-build all: phony DataStructure.exe SingleLinkedList.exe DoubleLinkedList.exe Queue.exe Stack.exe
+build all: phony DataStructure.exe Merge_K_Linked_List.exe SingleLinkedList.exe DoubleLinkedList.exe Queue.exe Stack.exe Generate_Binary_Numbers_from_1_to_n.exe
 
 # =============================================================================
 # Built-in targets

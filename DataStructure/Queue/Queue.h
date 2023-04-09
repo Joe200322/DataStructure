@@ -116,7 +116,7 @@ public:
                 cout << newNode->data;
                 if (newNode->next != NULL)
                 {
-                    cout << " - ";
+                    cout << " ";
                 }
                 newNode = newNode->next;
             }
